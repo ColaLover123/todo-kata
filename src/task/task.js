@@ -37,7 +37,7 @@ class Task extends React.Component {
             checked={checked}
           />
           <label htmlFor={id}>
-          <span className="description">{body ? body : ''}</span>
+            <span className="description">{body ? body : ''}</span>
             <span className="created">
               {`created ${formatDistanceToNow(date, {
                 includeSeconds: true,
@@ -85,5 +85,3 @@ Task.defaultProps = {
 };
 
 export default Task;
-
-
